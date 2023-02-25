@@ -1,16 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Home : MonoBehaviour
 {
     [SerializeField] private Alarm _alarm;
+    [SerializeField] private UnityEvent _comedIn;
+    [SerializeField] private UnityEvent _comedOut;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.TryGetComponent<Player>(out Player player))
         {
-            _alarm.StartAlarm();
+            _comedIn.Invoke();
         }
     }
 
@@ -18,7 +21,7 @@ public class Home : MonoBehaviour
     {
         if (collision.TryGetComponent<Player>(out Player player))
         {
-            _alarm.StopAlarm();
+            _comedOut.Invoke();
         }
     }
 }

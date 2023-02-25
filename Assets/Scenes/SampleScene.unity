@@ -478,6 +478,36 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _alarm: {fileID: 182657590}
+  _comedIn:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 182657590}
+        m_TargetAssemblyTypeName: Alarm, Assembly-CSharp
+        m_MethodName: StartAlarm
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _comedOut:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 182657590}
+        m_TargetAssemblyTypeName: Alarm, Assembly-CSharp
+        m_MethodName: StopAlarm
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &736703675
 GameObject:
   m_ObjectHideFlags: 0
